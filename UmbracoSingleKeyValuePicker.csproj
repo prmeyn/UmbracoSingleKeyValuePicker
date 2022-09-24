@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ContentTargetFolders>.</ContentTargetFolders>
+    <Product>UmbracoSingleKeyValuePicker</Product>
+    <PackageId>UmbracoSingleKeyValuePicker</PackageId>
+    <Title>UmbracoSingleKeyValuePicker</Title>
+    <Description></Description>
+    <PackageTags>umbraco plugin package</PackageTags>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <None Include=".\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+	<ItemGroup>
+		<Content Include=".\LICENSE" Pack="true" PackagePath="\" />
+	</ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\SingleKeyValuePicker\**">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <None Include="build\**">
+      <Pack>true</Pack>
+      <PackagePath>buildTransitive</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UmbracoKeyValuePropertyEditor" Version="4.0.0" />
+  </ItemGroup>
+</Project>
