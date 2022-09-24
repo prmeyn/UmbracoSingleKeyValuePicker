@@ -28,6 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="UmbracoKeyValuePropertyEditor" Version="4.0.0" />
+    <PackageReference Include="UmbracoKeyValuePropertyEditor" Version="5.0.0" />
   </ItemGroup>
 </Project>
