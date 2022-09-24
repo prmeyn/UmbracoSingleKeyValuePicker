@@ -1,4 +1,4 @@
-angular.module("umbraco").controller("SingleKeyValuePickerController", function ($scope, assetsService, $routeParams, $http, localizationService) {
+angular.module("umbraco").controller("SingleKeyValuePickerController", function ($scope, $routeParams, $http, localizationService) {
 	if (!$scope.model) {
 		$scope.model = {};
 	} 
@@ -36,5 +36,4 @@ angular.module("umbraco").controller("SingleKeyValuePickerController", function 
 			$scope.inEditState = false;
 		}
 	});
-	assetsService.loadCss("~/App_Plugins/SingleKeyValuePicker/style.css");
 });
