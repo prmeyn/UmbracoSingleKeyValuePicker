@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ContentTargetFolders>.</ContentTargetFolders>
     <Product>UmbracoSingleKeyValuePicker</Product>
     <PackageId>UmbracoSingleKeyValuePicker</PackageId>
@@ -28,6 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="UmbracoKeyValuePropertyEditor" Version="12.0.0" />
+    <PackageReference Include="UmbracoKeyValuePropertyEditor" Version="13.0.0" />
   </ItemGroup>
 </Project>
